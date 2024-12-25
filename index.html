@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Administration Weekly News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: maroon;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            height: 80px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            background-color: #800000;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #cc0000;
+        }
+
+        #news {
+            padding: 20px;
+        }
+
+        .news-section {
+            margin-bottom: 30px;
+        }
+
+        .news-section h2 {
+            text-align: center;
+            color: maroon;
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px; /* Matches the image's max width */
+            margin: 0 auto 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .news-item p {
+            text-align: justify;
+            margin: 0;
+        }
+        /* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    nav a {
+        margin: 5px 0;
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    header img {
+        height: 60px; /* Reduce the logo size */
+        left: 10px;   /* Adjust position */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        margin-left: 80px; /* Ensure space for the smaller logo */
+    }
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: maroon;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            height: 80px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            padding-right: 120px;
+        }
+
+        nav {
+            background-color: #800000;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #cc0000;
+        }
+
+    #home {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #home h2 {
+            font-size: 2.5em;
+            color: maroon;
+        }
+
+        #home p {
+            font-size: 1.2em;
+            margin: 20px auto;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+    .news-item {
+        max-width: 100%; /* Use full width on smaller screens */
+        padding: 10px;
+    }
+
+    .news-item img {
+        width: 100%;
+    }
+
+    .news-item p {
+        font-size: 14px; /* Adjust text size */
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 12px; /* Further reduce font size for very small screens */
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Smaller header text */
+    }
+
+    .news-item p {
+        font-size: 12px; /* Smaller text for better readability */
+    }
+}
+footer {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpeg" alt="Public Administration Logo">
+        <h1>Public Administration</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#week1">Week 1</a>
+        <a href="#week2">Week 2</a>
+        <a href="#week3">Week 3</a>
+        <a href="#week4">Week 4</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to Public Administration Weekly News</h2>
+        <p>Stay informed with the latest updates and activities from the Department of Public Administration at FJWU. Explore our weekly highlights, including events, achievements, and important announcements. Click on the weekly news buttons above to dive into the details!</p>
+    </section>
+    <section id="news">
+        <div id="week1" class="news-section">
+            <h2>Week 1 News</h2>
+            <article>
+                <div class="news-item">
+                    <img src="images/gender-panel.jpeg" alt="Panel Discussion">
+                    <p>
+                        <strong>FJWU Hosts Panel on Gender-Based Violence:</strong> Rawalpindi—Fatima Jinnah Women University (FJWU) held a panel discussion as part of 
+                        the 16 Days of Activism Against Gender-Based Violence. Organized by the Department of Gender Studies and ORIC in collaboration with NCA Pakistan, ROZAN, 
+                        and NCSW, the event focused on the theme, “From Peace at Home to Peace in the World.” Key speakers included NCSW Chairperson Ms. Umm e Laila Azhar and 
+                        experts from academia and advocacy. Vice Chancellor Dr. Bushra Mirza reaffirmed FJWU’s commitment to a violence-free society in her closing remarks. 
+                        The discussion highlighted collective action to combat gender-based violence.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="news-item">
+                    <img src="images/rosa-parks-day.jpg" alt="Rosa Park Day Event">
+                    <p>
+                        <strong>Rosa Park Day: Honoring Courage and Legacy:</strong> Lincoln Corners Pakistan hosted Rosa Park Day at SBARR. This event focused on the theme 
+                        "Sit Down for Injustice, Stand Up for Change," celebrating Rosa Parks' pivotal role in the civil rights movement and inspiring attendees to reflect 
+                        on the ongoing struggle for social justice. Participants engaged in meaningful discussions about courage and legacy, emphasizing the importance of standing against injustice in today's society.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="news-item">
+                    <img src="images/human-library.jpg" alt="Human Library Session">
+                    <p>
+                        <strong>Human Library Session:</strong> Dr. Noor ul Huda, a Ph.D. holder with a visual disability, led a Human Library session organized by the FJWU Library Society on 
+                        3rd December 2024. This event aimed to foster understanding and empathy by allowing participants to engage with Dr. Huda's personal experiences and insights, 
+                        highlighting the importance of inclusivity and diverse perspectives in academia.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="news-item">
+                    <img src="images/grand-gala.png" alt="Grand Gala 2024">
+                    <p>
+                        <strong>Grand Gala 2024:</strong> The Department of Bioinformatics & Biotechnology hosted its annual Grand Gala 2024, celebrating the achievements of students and faculty. 
+                        This vibrant event, held on Campus II, provided attendees with a memorable experience filled with delicious food displays and engaging moments.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="news-item">
+                    <img src="images/times-consultant.jpg" alt="Times Consultant Event">
+                    <p>
+                        <strong>Times Consultant Event:</strong> Times Consultant aimed at exploring study abroad opportunities in countries. Providing students with essential insights into course selection, 
+                        visa processes, and university applications. This event offered a unique platform for students to engage directly with consultants and gain valuable guidance for their educational journeys abroad.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="news-item">
+                    <img src="images/alumni-corner.jpeg" alt="Alumni Corner" style="width: 100%; max-width: 400px; border-radius: 5px; margin-bottom: 10px;">
+                    <p>
+                        <strong>Alumni Corner:</strong> I'm thrilled to share that I participated in an Inter-University thesis competition, where I competed against 24-25 MS and PhD holders. 
+                        As one of the only BS students from Fatima Jinnah, I'm proud to announce that two of our students secured positions in the competition! 
+                        Suman Riza secured the third position and received a cash prize, along with a certificate and a trophy, for her outstanding research on 
+                        "The Impact of Climate Change on Women's Well-being." Another student from our university secured the second position.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Public Administration Department. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
